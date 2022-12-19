@@ -1,0 +1,29 @@
+
+.center {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 12px;
+  padding-top: 12px;
+
+}
+.button{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid rgb(246, 240, 240);
+
+}
+.matResult{
+  background-color:#fb7e00
+}
+.result{
+  padding: 24px;
+
+}
+.resultNum{
+  font-size:48px;
+  margin-left: 12px;
+
+}

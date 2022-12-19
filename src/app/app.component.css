@@ -1,0 +1,15 @@
+.navbar {
+    justify-content: space-between;
+}
+button {
+    padding-right: 1rem;
+}
+
+.main-container {
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #890000 ;
+
+
+  }

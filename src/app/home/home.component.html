@@ -1,0 +1,47 @@
+
+  <!--
+  Title: home.component.html
+  Author: Manel Phiseme
+  Date: 11 December 2022
+  Description: Loan application
+-->
+    <form flexLayout="column" style="background-color:#fb7e00" >
+
+      <div class="center" style="width:50%">
+        <mat-card-content >
+          <label>Loan Amount</label>
+          <mat-form-field appearance="fill" class="center" style="background-color:aliceblue">
+              <mat-label>Amount</mat-label>
+              <input name="lnAmt" matInput [(ngModel)]="calEntry.lnAmt" matInput placeholder="0.00" >
+          </mat-form-field>
+          <br/>
+          <label>Interest Rate</label>
+          <mat-form-field appearance="fill" class="center" style="background-color:aliceblue" >
+              <mat-label>Rate</mat-label>
+              <input  name="intRt" matInput [(ngModel)]="calEntry.intRt" >
+          </mat-form-field>
+          <br/>
+          <label>Loan Term in Year</label>
+          <mat-form-field appearance="fill" class="center" style="background-color:aliceblue">
+              <mat-label>year</mat-label>
+              <input name="lnYr" matInput [(ngModel)]="calEntry.lnYr">
+          </mat-form-field>
+          <br/>
+          <button mat-button (click)="calculate()" class="button">Calculate</button>
+      </mat-card-content>
+      </div>
+    </form>
+
+    <br/><br/>
+
+      <mat-card class="matResult">
+        <div style="text-align:center;">
+          <mat-card-title > Result</mat-card-title>
+          <mat-card-content>
+              <div mat-line class="result">Your Monthly payment <span class="resultNum">{{payInMonths.toFixed(2)}}</span></div>
+              <div mat-line class="result">Your Interest paid <span class="resultNum">{{interestPay.toFixed(2)}}</span> </div>
+          </mat-card-content>
+      </div>
+      </mat-card>
+
+
